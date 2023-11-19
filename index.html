@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Punto de equilibrio</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a class="activo" href="/index.html">Punto de equilibrio</a>
+            <a href="/presupuestos.html">Presupuestador</a>
+        </nav>
+    </header>
+    <main class="contenedor">
+        <div class="calculador">
+            <div class="calculador__campo">
+                <input class="calculador__field" type="number" placeholder="Costos fijos" id="cf">
+            </div>
+            <div>
+                <input class="calculador__field" type="number" placeholder="Precio de Venta" id="pv">
+            </div>
+            <div>
+                <input class="calculador__field" type="number" placeholder="Costos variables" id="cv">
+            </div>
+            <div>
+                <input class="boton calculador__field" type="submit" value="Calcular" onclick="puntoDeEquilibrio()">
+            </div>
+            <div id="resultado" class="result"></div>
+        </div>
+</main>
+    
+<section class="info contenedor">
+    <div class="info_content">
+        <p class="info__text">
+            El punto de equilibrio en ventas es el nivel de actividad comercial en el cual los ingresos totales son iguales a los 
+            costos totales, resultando en cero beneficio ni pérdida. En otras palabras, es el punto en el que una empresa no gana 
+            ni pierde dinero. Este punto se calcula considerando los costos fijos y variables. Los costos fijos son aquellos que 
+            no varían con la producción o las ventas, mientras que los costos variables sí lo hacen.
+            <br>
+            El análisis del punto de equilibrio es útil para las empresas ya que proporciona información sobre el umbral mínimo de 
+            ventas necesario para cubrir los costos y comenzar a generar beneficios. Además, permite evaluar el riesgo financiero y 
+            la rentabilidad en diferentes escenarios.
+        </p>
+    </div>
+</section>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

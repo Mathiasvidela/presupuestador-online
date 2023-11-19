@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Punto de equilibrio</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a href="/index.html">Punto de equilibrio</a>
+            <a class="activo" href="/presupuestos.html">Presupuestador</a>
+        </nav>
+    </header>
+    <main class="contenedor">
+
+        <div class="presupuestador">
+
+            <div class="presupuestador__campo">
+                <input class="presupuestador__field" type="number" placeholder="Presupuesto" id="presupuesto">
+            </div>
+            <div>
+                <input class="boton presupuestador__field" type="submit" value="Calcular" onclick="presupuestar()">
+            </div>
+
+        </div>
+
+        <div class="presupuestador__porcentaje">
+
+            <div>
+                <h3 class="presupuestador__partes"><span class="text__bold">50%</span> Gastos necesarios</h3>
+            </div>
+            <div id="parteuno" class="result r-presu"></div>
+
+            <div>
+                <h3 class="presupuestador__partes"><span class="text__bold">30%</span> Gastos opcionales</h3>
+            </div>
+            <div id="partedos" class="result r-presu"></div>
+
+            <div>
+                <h3 class="presupuestador__partes"><span class="text__bold">20%</span> Ahorros o inversion</h3>
+            </div>
+            <div id="partetres" class="result r-presu"></div>
+
+        </div>
+</main>
+
+<section class="info contenedor">
+    <div class="info_content">
+        <p class="info__text">
+            
+El método económico 50-30-20 es una estrategia de gestión financiera que sugiere asignar porcentajes específicos de los ingresos
+a distintas categorías de gastos y ahorros. La regla se basa en asignar el 50% de los ingresos a necesidades básicas, el 30% a
+deseos y el 20% a ahorros. 
+<br>
+Este enfoque proporciona una guía general para administrar los ingresos de manera equilibrada, asegurando 
+que se atiendan las necesidades fundamentales, se permita el disfrute de la vida y se planifique para el futuro mediante el ahorro e 
+inversión. Es importante destacar que estas proporciones son sugerencias generales y pueden adaptarse según las circunstancias y metas 
+financieras individuales.
+        </p>
+    </div>
+</section>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>
